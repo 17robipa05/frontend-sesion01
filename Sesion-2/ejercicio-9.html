@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vamos PERÚ</title>
+</head>
+<body>
+    <h4>Alienta a la selección en la Copa América 2019</h4>
+
+    <form action="mensaje-correcto.html" target="_blank" method="POST" autocomplete="off">
+        <label for="nombre">Nombre del participante:</label> 
+        <input type="text" id="nombre" name="user" required><br>
+
+        <label for="apellido">Apellidos del participante:</label> 
+        <input type="text" id="apellido" name="user" required><br>
+
+        <label for="dni">DNI</label>
+        <input type="text" id="dni" pattern="[0-9]{8}" required><br>
+
+        <label for="">Sexo</label>
+        <input type="radio" name="sexo" checked>Masculino
+        <input type="radio" name="sexo">Femenino<br>
+
+        <label for="celular">Número de celular</label>
+        <input type="text" id="dni" pattern="[0-9]{9}" required><br>
+
+        <label>Correo:</label>          
+        <input type="email" required> <br>
+
+        <label for="pass">Foto del hincha:</label>
+        <input type="file" id="pass" name="pass" required><br>
+
+        <label for="mensaje">Mensaje de aliento</label><br>
+        <textarea id="mensaje" cols="40" rows="20"></textarea><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Restablecer</button>
+
+    </form>
+    
+
+
+
+</body>
+</html>

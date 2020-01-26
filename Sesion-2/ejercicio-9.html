@@ -9,12 +9,12 @@
 <body>
     <h4>Alienta a la selección en la Copa América 2019</h4>
 
-    <form action="mensaje-correcto.html" target="_blank" method="POST" autocomplete="off">
+    <form action="mensaje-correcto.html" method="POST" autocomplete="off">
         <label for="nombre">Nombre del participante:</label> 
-        <input type="text" id="nombre" name="user" required><br>
+        <input type="text" id="nombre" pattern="[A-Za-z]\s{1,50}" name="nombre" required><br>
 
         <label for="apellido">Apellidos del participante:</label> 
-        <input type="text" id="apellido" name="user" required><br>
+        <input type="text" id="apellido" pattern="[A-Za-z]\s{1,50}" name="apellido" required><br>
 
         <label for="dni">DNI</label>
         <input type="text" id="dni" pattern="[0-9]{8}" required><br>
@@ -29,8 +29,8 @@
         <label>Correo:</label>          
         <input type="email" required> <br>
 
-        <label for="pass">Foto del hincha:</label>
-        <input type="file" id="pass" name="pass" required><br>
+        <label for="foto">Foto del hincha:</label>
+        <input type="file" id="foto" name="foto" required><br>
 
         <label for="mensaje">Mensaje de aliento</label><br>
         <textarea id="mensaje" cols="40" rows="20"></textarea><br>
@@ -39,9 +39,5 @@
         <button type="reset">Restablecer</button>
 
     </form>
-    
-
-
-
 </body>
 </html>

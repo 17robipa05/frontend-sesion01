@@ -1,0 +1,12 @@
+section{
+    display: -webkit-box;
+    display: flex;
+}
+
+.article-1{
+    background-color: salmon;
+}
+
+.article-2{
+    background-color: slateblue;
+}
